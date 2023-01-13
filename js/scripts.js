@@ -1,17 +1,18 @@
-function displayLanguage() {
-  const ranger = document.getElementsByName('ranger').setAttribute("class", "hidden");
-  const dogs = document.getElementsByName('dogs').setAttribute("class", "hidden");
-  const football = document.getElementsByName('football').setAttribute("class", "hidden");
-  const woods = document.getElementsByName('woods').setAttribute("class", "hidden");
-  const spaghetti = document.getElementsByName('spaghetti').setAttribute("class", "hidden");
+function hideResults() {
+  document.getElementsByName('ranger').setAttribute("class", "hidden");
+  document.getElementsByName('dogs').setAttribute("class", "hidden");
+  document.getElementsByName('football').setAttribute("class", "hidden");
+  document.getElementsByName('woods').setAttribute("class", "hidden");
+  document.getElementsByName('spaghetti').setAttribute("class", "hidden");
 }
 
-window.onclick = function() {
+window.onload = function() {
+  hideResults();
 
-document.querySelector("form").onclick = function(event) {
+document.querySelector("form").onsubmit = function(event) {
   event.preventDefault();
+  hideResults();
 
-  if (ranger.checked && dogs.checked && football.checked && woods.checked && spaghetti.checked);
-    onclick="Javascript" 
+if (ranger && dogs && football && woods && spaghetti)
 }
   };
