@@ -7,12 +7,13 @@ function hideResults() {
 }
 
 window.onload = function() {
-  hideResults();
-
 document.querySelector("form").onsubmit = function(event) {
   event.preventDefault();
   hideResults();
-
-if (ranger && dogs && football && woods && spaghetti)
-}
-  };
+  const ranger = document.getElementByName("ranger").value;
+  const dog = document.getElementByName("dog").value;
+  const football = document.getElementByName("ranger").value;
+  const woods = document.getElementByName("woods").value;
+  const spaghetti = document.getElementByName("spaghetti").value; 
+ };
+}; 
