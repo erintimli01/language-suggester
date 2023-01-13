@@ -16,4 +16,10 @@ document.querySelector("form").onsubmit = function(event) {
   const woods = document.getElementByName("woods").value;
   const spaghetti = document.getElementByName("spaghetti").value; 
  };
-}; 
+};
+
+if (document.getElementByName(ranger).checked) {
+  
+}
+
+}
