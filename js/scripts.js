@@ -18,8 +18,11 @@ document.querySelector("form").onsubmit = function(event) {
  };
 };
 
-if (document.getElementByName(ranger).checked) {
-  
+function onclick(){
+  if (document.getElementByName(ranger).checked == true) {
+  result ("javascript");
+} else {
+
 }
 
 }
