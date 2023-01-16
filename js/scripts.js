@@ -6,19 +6,24 @@ function hideResults() {
   document.getElementsByName('spaghetti').setAttribute("class", "hidden");
 }
 
-window.onload = function() {
-document.querySelector("form").onsubmit = function(event) {
-  event.preventDefault();
-  hideResults();
-  const ranger = document.getElementByName("ranger").value;
-  const dog = document.getElementByName("dog").value;
-  const football = document.getElementByName("ranger").value;
-  const woods = document.getElementByName("woods").value;
-  const spaghetti = document.getElementByName("spaghetti").value; 
- };
-};
 
-function onclick(){
+
+function handleRadio(event) {
+  event.preventDefault();
+  const radioSelection1 = document.querySelector("input[name='ranger']:checked").value
+  const radioSelection2 = document.querySelector("input[name='dog']:checked").value
+  const radioSelection3 = document.querySelector("input[name='football']:checked").value
+  const radioSelection4 = document.querySelector("input[name='woods']:checked").value
+  const radioSelection5 = document.querySelector("input[name='spaghetti']:checked").value
+}
+
+window.addEventListener("load", function() {
+  document.getElementById("radio-form").addEventListener("submit", handleRadio);
+});
+  
+
+
+function onclick() {
   if (document.getElementByName(ranger).checked == true) {
   result ("javascript");
 } else {
