@@ -24,7 +24,7 @@ _On this application, you'll be able to answer a few questions about yourself an
 ## Known Bugs
 
 * _Currently not live on the web_
-* _Does not return with result_
+* _No known bugs!_
 
 ## License
 
